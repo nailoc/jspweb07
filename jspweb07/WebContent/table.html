@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb07_테이블css속성</title>
+<link rel="stylesheet" href="css/style.css"></link>
+<style type="text/css">
+	table {
+		border-collapse: collapse;
+		/* empty-cells 속성이 무시됨 */
+		/* border-spacing 속성이 무시됨 */
+		empty-cells: show; /* show - 기본값 */
+		border-spacing: 5px 20px; /* 5px 10px 15px 20px - 이런규칙은 적용 안됨*/
+		/* padding: 상하px 좌우px */
+	}
+	td {
+		border: 1px solid #999999;
+	}
+	th {
+		width: 200px;
+	}
+</style>
+</head>
+<body>
+	<h2>테이블속성 예제</h2>
+	<table>
+		
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>나이</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>John</td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
